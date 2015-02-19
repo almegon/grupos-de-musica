@@ -1,0 +1,55 @@
+body {
+background-color: #BF443F;
+}
+header {
+background-color: #A43A36;
+    height: 120px;
+}
+header ul {
+margin-top: 0;
+    padding: 0;
+}
+header li {
+display: inline;
+    padding: 5px;
+}
+nav a {
+text-decoration: none;
+}
+
+.centrado {
+width: 980px;
+    margin: 0 auto;
+}
+h2,h3,h4{
+color: #569A9F;
+}
+h1 {
+text-align: center;
+    color: white;
+}
+.fondogris {
+background-color: #569A9F;
+    padding: 5px 10px;
+}
+
+ .logo{
+width: 447px;
+}
+
+li img {
+height: auto;
+    width=50px;
+    vertical-align: middle;
+    margin: 3px;
+    border: 2px solid #569A9F;
+    padding: 5px;
+    background-color: #BF443F;
+}
+.cantantes {
+list-style-type: none;
+}
+.lugar{
+color: grey;
+    text-transform: uppercase;
+}
