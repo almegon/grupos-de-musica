@@ -18,10 +18,13 @@ text-decoration: none;
 }
 
 .centrado {
-width: 980px;
+width: 680px;
     margin: 0 auto;
 }
-h2,h3,h4{
+h2{
+    border-bottom: 2px solid  #569A9F;
+}
+h2, h3, h4{
 color: #569A9F;
 }
 h1 {
@@ -35,6 +38,8 @@ background-color: #569A9F;
 
  .logo{
 width: 447px;
+     display:block;
+    margin: 0 auto;
 }
 
 li img {
