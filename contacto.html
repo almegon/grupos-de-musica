@@ -29,6 +29,21 @@
     
     <h2>Formulario de Contacto</h2>
     <!-- Aquí irá el formulario de contacto -->
+    <FORM METHOD="post" ACTION="procesar_mensaje.php">
+            <fieldset style="width: 40%">
+                
+                <for name ="nombre">Escribe tu nombre:</for><br />
+                <INPUT TYPE="text" NAME="nombre"><br/><br/>
+
+                <for name ="correo">Escribe tu mail: <br/></for>
+                <INPUT TYPE="text" NAME="correo"><br/><br/>
+
+                <for name = "contenido">Escribe el texto: <br/></for>
+                <TEXTAREA rows="11" name="contenido" cols="60"></textarea><br />
+  
+  <INPUT TYPE="submit" value="Enviar">
+</fieldset>
+</FORM>
     </div>
 </body>
 
