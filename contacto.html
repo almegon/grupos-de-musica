@@ -27,25 +27,67 @@
      </div>
     </header>
     <div class="centrado">
-    
+    <section>
     <h2>Formulario de Contacto</h2>
     <!-- Aquí irá el formulario de contacto -->
-<!--    <FORM METHOD="post" ACTION="contacto.html">-->
-            <fieldset style="width: 40%">
-                
-                <for name ="nombre">Escribe tu nombre:</for><br />
-                <INPUT TYPE="text" NAME="nombre"><br/><br/>
+<div id="contacto">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad">
+                    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                    
+                    <label for="grupo">Nombre de tu grupo</label>
+                    <input type="text" name="grupo" id="grupo">
+                    
+                    <label for="tipomusica">Tipo de música</label>
+                    <select name="tipomusica" id="tipomusica">
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Country">Country</option>
+                        <option value="Hip Hop">Hip Hop</option>
+                        <option value="Heavy">Heavy</option>
+                        <option value="Música tradicional">Música tradicional</option>
+                    </select>
+                    
+                    <label for="newsletter">Quiero recibir vuestras noticias</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="hombre">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="sexo" id="mujer">
+                    <div>
+                    
+                    <input type="reset" value="Cancelar"><input type="submit" value="Enviar">
+                    </div>
 
-                <for name ="correo">Escribe tu mail: <br/></for>
-                <INPUT TYPE="text" NAME="correo"><br/><br/>
 
-                <for name = "contenido">Escribe el texto: <br/></for>
-                <TEXTAREA rows="11" name="contenido" cols="60"></textarea><br />
-  
-  <INPUT TYPE="submit" value="Enviar">
-</fieldset>
-<!--</FORM>-->
+                </form>
+            </div>
+        </section>
     </div>
+    <div id="footer" align="center">
+    
+		<div class="wrap">
+			<a href="https://www.facebook.com/" target="_blank">
+				<img class="avatar2" src="images/facebook.png" alt="" />
+			</a>
+			<a href="https://twitter.com/" target="_blank">
+				<img class="avatar2" src="images/twitter.png" alt="" />
+			</a>
+			<a href="https://www.tuenti.com/" target="_blank">
+				<img class="avatar2" src="images/tuenti.png" alt="" />
+			</a>
+			<a href="https://mail.google.com/" target="_blank">
+				<img class="avatar2" src="images/gmail.png" alt="" />
+			</a>
+			<h4>Alberto Menés Gonzalo. 2015</h4>
+		</div>
+	</div>
 </body>
 
 </html>

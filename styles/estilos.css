@@ -1,60 +1,243 @@
 body {
-background-color: #BF443F;
+    width: 100%;
+    height: 100%;
+    background-color: #BF443F;
 }
+
 header {
-background-color: #A43A36;
-    height: 120px;
+    background-color: #A43A36;
+    height: 7.500em;
 }
+
 header ul {
-margin-top: 0;
+    margin-top: 0;
     padding: 0;
 }
+
 header li {
-display: inline;
-    padding: 5px;
+    display: inline;
+    padding: 0.313em;
 }
+
 nav a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .centrado {
-width: 680px;
+    background: #A43A36;
+    width: 80%;
     margin: 0 auto;
 }
-h2{
-    border-bottom: 2px solid  #569A9F;
-}
-h2, h3, h4{
-color: #569A9F;
-}
-h1 {
-text-align: center;
-    color: white;
-}
-.fondogris {
-background-color: #569A9F;
-    padding: 5px 10px;
+
+h2 {
+    border-bottom: 0.125em solid #569A9F;
 }
 
- .logo{
-width: 447px;
-     display:block;
+h2,
+h3,
+h4 {
+    color: #569A9F;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.fondogris {
+    background-color: #569A9F;
+    padding: 0.313em 0.625em;
+}
+
+.logo {
+    width: 70%;
+    display: block;
     margin: 0 auto;
 }
 
 li img {
-height: auto;
-    width=50px;
+    height: auto;
+    width=3.125em;
     vertical-align: middle;
-    margin: 3px;
-    border: 2px solid #569A9F;
-    padding: 5px;
+    margin: 0.188em;
+    border: 0.125em solid #569A9F;
+    padding: 0.313em;
     background-color: #BF443F;
 }
+
 .cantantes {
-list-style-type: none;
+    list-style-type: none;
 }
-.lugar{
-color: grey;
+
+.lugar {
+    color: grey;
     text-transform: uppercase;
+}
+/*Formulario*/
+
+#contacto {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input,
+select {
+    display: block;
+    width: 95%;
+    margin-bottom: 0.938em;
+}
+
+input[type=submit],
+input[type=reset] {
+    display: inline;
+    width: 30%;
+}
+
+input[type=reset] {
+    margin-right: 3.125em;
+}
+
+input[type=checkbox],
+input[type=radio],
+label[for=hombre],
+label[for=mujer],
+label[for=newsletter] {
+    display: inline;
+    width: auto;
+}
+
+p {
+    font-size: 1.000em;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#header,
+#footer {
+    width: 100%;
+    float: left;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+}
+
+@media screen and (max-width: 599px) {
+    ul,
+    li,
+    ol,
+    label,
+    input,
+    link,
+    a,
+    select {
+        font-size: 0.575em;
+    }
+    .avatar {
+        width: 1.525em;
+        height: 1.725em;
+    }
+    .avatar2 {
+        width: 1.625em;
+        height: 1.625em;
+    }
+    .indice {
+        width: 10em;
+    }
+    .guitarra {
+        width: 6em;
+        height: 2em;
+    }
+    p {
+        font-size: 0.375em;
+    }
+    h1,
+    title {
+        font-size: 0.575em;
+    }
+    h2 {
+        font-size: 0.550em;
+    }
+    h3,
+    h4 {
+        font-size: 0.500em;
+    }
+    header ul li {
+        display: block;
+        clear: both;
+        padding: 1em;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    ul,
+    li,
+    ol,
+    label,
+    input,
+    link,
+    a,
+    select {
+        font-size: 0.800em;
+    }
+    .avatar {
+        width: 2.400em;
+        height: 2.900em;
+    }
+    .avatar2 {
+        width: 2.400em;
+        height: 2.400em;
+    }
+    .indice {
+        width: 20em;
+    }
+    .guitarra {
+        width: 8em;
+        height: 4em;
+    }
+    p {
+        font-size: 0.600em;
+    }
+    h1,
+    title {
+        font-size: 0.750em;
+    }
+    h2 {
+        font-size: 0.725em;
+    }
+    h3,
+    h4 {
+        font-size: 0.700em;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+    header {
+        background-color: white;
+    }
+    centrado {
+        background: white;
+    }
+    h2,
+    h3,
+    h4 {
+        border-bottom: black;
+    }
+    fondogris {
+        background-color: white;
+    }
+    li img {
+        border: black;
+    }
 }
